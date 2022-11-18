@@ -1,0 +1,13 @@
+:root {
+    --light-pink: #F5B0C2;
+    --bright-pink: #FC1577;
+    --dark-orange: #EB3402;
+    --dark-blue: #002493;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
