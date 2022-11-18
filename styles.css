@@ -75,6 +75,17 @@ body {
     height: 20vh;
 }
 
+.infoBox p {
+    font-size: 1rem;
+    line-height: 1.5rem;    
+    z-index: 9;
+    width: 60%;        
+}
+
+.infoBox img {
+    width: 100%;
+}
+
 .infoBox:first-child {
     background-image: url(./images/asset-cuteleaves.svg);
     background-repeat: no-repeat;
@@ -83,25 +94,44 @@ body {
     border: 0;
 }
 
+.infoBox:first-child p {
+    transform: rotate(-3deg);
+}
+
+
 .infoBox:nth-child(2) {
     background-image: url(./images/asset-cuterainbowclock.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: left;
     border: 0;
+    margin-top: 2rem;
 }
 
 .infoBox:nth-child(2) p {
     padding-left: 50%;
+    transform: rotate(3deg);
 }
 
-.infoBox p {
-    font-size: 1.2rem;    
-    z-index: 9;
-    width: 56%;        
+.infoBox:nth-child(3) {
+    background-image: url(./images/asset-cutebong.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    border: 0;
+    margin-top: 2rem;
 }
 
-.infoBox img {
+.infoBox:nth-child(3) p {
+    transform: rotate(-3deg);
+}
+
+.productVideoSection {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.productVideoSection iframe {
     width: 100%;
 }
 
