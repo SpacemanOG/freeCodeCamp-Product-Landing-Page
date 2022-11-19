@@ -18,8 +18,6 @@
 body {
     font-family: 'Comfortaa', cursive;
     background-color: var(--light-pink);
-    /* width: 100vw; */
-    overflow: hidden;
 }
 
 
@@ -76,6 +74,11 @@ body {
 }
 
 /* THE MAIN CONTENT SECTION */
+.mainBody {
+    width: 100vw;
+    overflow: hidden;
+}
+
 .infoBox {
     width: 116vw;
     height: 12vh;
