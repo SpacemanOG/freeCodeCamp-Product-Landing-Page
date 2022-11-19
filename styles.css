@@ -18,14 +18,17 @@
 body {
     font-family: 'Comfortaa', cursive;
     background-color: var(--light-pink);
+    /* width: 100vw; */
+    overflow: hidden;
 }
+
 
 /* INDIVIDUAL SETTINGS */
 /* INDIVIDUAL SETTINGS */
 
 /* TOP SECTION AND NAV BAR */
 #header {
-    width: 100%;
+    width: 100vw;
     height: 8vh;
     background-color: var(--light-pink);
     display: flex;
