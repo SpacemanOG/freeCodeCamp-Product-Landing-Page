@@ -127,8 +127,13 @@ body {
 
 /* THE PRODUCT VIDEO SECTION */
 .productVideoSection {
-    margin-top: 2rem;
+    margin-top: 8vh;
     padding: 1rem;
+}
+
+.productVideoSection h2 {
+    margin: 2vh 0;
+    font-size: 4vw;
 }
 
 .productVideoSection iframe {
