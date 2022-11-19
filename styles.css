@@ -17,6 +17,7 @@
 
 body {
     font-family: 'Comfortaa', cursive;
+    background-color: var(--light-pink);
 }
 
 /* INDIVIDUAL SETTINGS */
@@ -81,7 +82,8 @@ body {
     transform: rotate(2deg);
     position: relative;
     left: -8vw;
-    background-color: var(--light-pink);
+    background-color: var(--bright-pink);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .infoBox p {
@@ -89,6 +91,15 @@ body {
     font-size: 3.2vw;
     line-height: 1.6rem;
     margin: 0 16vw;
+    color: var(--light-pink);
+    font-weight: 700;
+}
+
+.infoBox img {
+    width: 36%;
+    position: absolute;
+    top: -4vh;
+    right: 12vw;
 }
 
 .infoBox:nth-child(2) {
@@ -99,6 +110,18 @@ body {
 
 .infoBox:nth-child(2) p {
     text-align: right;
+}
+
+.infoBox:nth-child(2) img {
+    width: 32%;    
+    top: -2vh;
+    left: 12vw;
+}
+
+.infoBox:nth-child(3) img {
+    width: 32%;
+    top: -1vh;
+    right: 12vw;
 }
 
 
