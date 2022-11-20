@@ -31,7 +31,13 @@
     </header>
 
     <section class="heroSection">
-        <img src="./images/hero-image-mobile.png" alt="logo of the healing center">
+        <picture class="heroImage">
+            <source media="(min-width:800px)" srcset="./images/background-desktop.svg">
+            <source media="(min-width:300px)" srcset="./images/hero-image-mobile.png">
+            <img src="./images/hero-image-mobile.png" alt="logo of the healing center">
+        </picture>
+        <h1 class="heroTitle">Herb & Healing</h1>
+        <h2 class="heroSubTitle">A dope place to be</h2>
     </section>
 
     <main class="mainBody">
@@ -46,7 +52,7 @@
                 alt="decorative digital image of a happy clock showing the time four twenty">
         </div>
         <div class="infoBox">
-            <p>We also have junk with personalities! Maybe you will find something that talks to you when you look
+            <p>We also have junk with personalities! Maybe you will find something that speaks to you when you look
                 around.
             </p>
             <img src="./images/asset-cutebong.svg" alt="decorative digital image of a happy bong pipe">
@@ -81,7 +87,8 @@ https://www.freecodecamp.com/email-submit) -->
 
     <footer>
         <address>
-            <p>Designed and developed by <a href="https://github.com/SpacemanOG" target="_blank">spaceman(webdev)</a></p>
+            <p>Designed and developed by <a href="https://github.com/SpacemanOG" target="_blank">spaceman(webdev)</a>
+            </p>
         </address>
     </footer>
 

@@ -74,12 +74,17 @@ body {
 }
 
 /* HERO IMAGE SECTION */
-.heroSection {
-    margin-top: 8vh;
+.heroImage img {
+    width: 100%;
 }
 
-.heroSection img {
-    width: 100%;
+.heroTitle,
+.heroSubTitle {
+    display: none;
+}
+
+.heroTitle {
+    font-family: 'Dancing Script', cursive;
 }
 
 /* THE MAIN CONTENT SECTION */
@@ -183,6 +188,7 @@ input[type=email] {
     background-color: var(--light-pink);
     transition: 0.5s;
     text-align: center;
+    color: #000000;
 }
 
 input[type=email]:focus {
@@ -202,6 +208,7 @@ input[type=submit] {
     background-color: var(--dark-blue);
     color: var(--light-pink);
     font-weight: 700;
+    /* PUTTING THE BELOW CODE TO FIX iOS BUTTON APPREARANCE ISSUE */
     appearance: none;
 }
 
@@ -215,4 +222,175 @@ footer {
     padding: 0 8vw 4vh 8vw;
     font-size: .8rem;
     text-align: center;
+}
+
+/* RESPONSIVE DESIGN USING MEDIA QUERIES */
+@media (min-width: 800px) {
+
+    /* USING THE BELOW CODE INSTEAD OF USING A BACKGROUND IMAGE */
+    .heroImage {
+        position: fixed;
+        z-index: -1;
+    }
+
+
+    /* HERE ARE THE NAV BAR OR HEADER SETTINGS */
+    #nav-bar,
+    #nav-bar ul {
+        height: inherit;
+    }
+
+    #header {
+        height: 16vh;
+        z-index: 9;
+        align-items: center;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.88);
+    }
+
+    #header-img {
+        width: 12vw;
+        padding-left: 4vw;
+        /* padding-left: 4vw; */
+        /* USING THE BELOW CODE TO COLOR THE SVG LOGO */
+        /* BUT THEN I DECIDED TO MAKE THE BACKGROUND COLOR BLACK */
+        /* SO I COMMENTED OUT THE CODE BELOW AND MADE THE LOGO WHITE AGAIN */
+        /* filter: brightness(0) saturate(100%); */
+    }
+
+    #nav-bar {
+        margin: 0;
+        padding-right: 6vw;
+    }
+
+    #nav-bar li {
+        font-size: 2.4vw;
+        color: var(--bright-pink);
+    }
+
+    #nav-bar li:hover {
+        border-bottom: 2px solid var(--light-pink);
+    }
+
+
+    /* HERE ARE THE SETTINGS FOR THE HERO SECTION */
+    .heroSection {
+        margin-top: 24vh;
+        background-color: rgba(245, 176, 194, 0.8);
+    }
+
+    .heroTitle,
+    .heroSubTitle {
+        display: block;
+        padding-left: 4vw;
+    }
+
+    .heroTitle {
+        font-size: 8vw;
+        color: var(--bright-pink);
+    }
+
+    .heroSubTitle {
+        color: var(--dark-blue);
+        padding-bottom: 4vh;
+    }
+
+
+    /* HERE ARE THE SETTINGS FOR THE MAIN SECTION */
+    .mainBody {
+        display: flex;
+        justify-content: center;
+        column-gap: 2vw;
+        margin-top: 24vh;
+        overflow: visible;
+    }
+
+    .infoBox,
+    .infoBox:nth-child(2) {
+        transform: rotate(0deg);
+    }
+
+    .infoBox {
+        margin: 0;
+        padding: 1rem;
+        width: 25vw;
+        /* height: 40vh; */
+        left: 0;
+        border-radius: 1rem;
+        box-shadow: none;
+        height: min-content;
+    }
+
+    .infoBox:nth-child(2) {
+        display: block;
+    }
+
+
+    .infoBox p {
+        font-size: 1.6vw;
+        margin: 0;
+        padding: 8vh 0 0 0;
+        width: 100%;
+    }
+
+    .infoBox p,
+    .infoBox:nth-child(2) p {
+        text-align: center;
+    }
+
+    .infoBox:first-child img,
+    .infoBox:nth-child(2) img,
+    .infoBox:nth-child(3) img {
+        top: -24vh;
+        right: 50%;
+        transform: translateX(50%);
+        left: unset;
+        width: 16vw;
+    }
+
+
+    /* HERE ARE THE SETTING FOR THE PRODUCT VIDEO SECTION */
+    .productVideoSection {
+        margin-top: 16vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 8vh 4vw 16vh 4vw;
+    }
+
+    .productVideoSection h2 {
+        font-size: 4vw;
+        text-align: center;
+        padding: 0 8vw;
+        margin-bottom: 8vh;
+        color: var(--light-pink);
+    }
+
+
+    /* THIS IS THE FORM SECTION */
+    #form {
+        margin-top: 8vh;
+        background-color: rgba(245, 176, 194, 0.8);
+        padding-bottom: 8vh;
+    }
+
+    #form h2 {
+        font-size: 4vw;
+        /* text-align: center; */
+    }
+    
+    input[type=email],
+    input[type=submit] {
+        width: 56vw;
+        height: 12vh;
+        margin-top: 4vh;
+        padding: 0;
+    }
+    
+    
+    /* HERE IS THE FOOTER */
+    footer {
+            margin: 8vh 0;
+        }
+
+
+
 }
